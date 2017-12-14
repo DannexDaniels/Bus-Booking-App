@@ -1,0 +1,171 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dannextech.apps.busbooking.SelectSeat">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_margin="10dp">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:id="@+id/tvAmountText"
+                   android:text="Amount to Pay"
+                   android:textAppearance="?android:attr/textAppearanceLarge"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tvAmount"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentTop="true"
+                   android:text="sh 1000"
+                   android:textAppearance="?android:attr/textAppearanceLarge"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/tvAmountText"
+                   android:textAlignment="center"
+                   android:text="Select Seat Below"
+                   android:layout_marginTop="15dp"
+                   android:textAppearance="?android:attr/textAppearanceLarge"/>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp">
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Driver"
+                   android:id="@+id/btDriver"
+                   android:clickable="false"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginBottom="15dp"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 1Y"
+                   android:id="@+id/bt1Y"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginBottom="15dp"/>
+
+               <Button
+                   android:id="@+id/bt1X"
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_toEndOf="@+id/bt1Y"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:text="Seat 1X" />
+
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 4"
+                   android:id="@+id/bt4"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginBottom="15dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/btDriver"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 2"
+                   android:id="@+id/bt2"
+                   android:layout_below="@+id/bt1Y"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="15dp"/>
+
+               <Button
+                   android:id="@+id/bt3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:layout_below="@+id/bt1X"
+                   android:layout_toStartOf="@+id/bt4"
+                   android:layout_marginEnd="15dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="15dp"
+                   android:text="Seat 3" />
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 7"
+                   android:id="@+id/bt7"
+                   android:layout_alignParentEnd="true"
+                   android:layout_below="@+id/bt4"
+                   android:layout_marginBottom="15dp"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 5"
+                   android:id="@+id/bt5"
+                   android:layout_below="@+id/bt2"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginBottom="15dp"/>
+
+               <Button
+                   android:id="@+id/bt6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:layout_below="@+id/bt3"
+                   android:layout_toStartOf="@+id/bt7"
+                   android:layout_marginEnd="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:text="Seat 6" />
+
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 10"
+                   android:id="@+id/bt10"
+                   android:layout_alignParentEnd="true"
+                   android:layout_below="@+id/bt7"
+                   android:layout_marginBottom="15dp"/>
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:text="Seat 8"
+                   android:id="@+id/bt8"
+                   android:layout_below="@+id/bt5"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginBottom="15dp"/>
+
+               <Button
+                   android:id="@+id/bt9"
+                   android:layout_width="wrap_content"
+                   android:layout_height="80dp"
+                   android:layout_below="@+id/bt6"
+                   android:layout_toStartOf="@+id/bt10"
+                   android:layout_marginEnd="15dp"
+                   android:text="Seat 9" />
+           </RelativeLayout>
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/btSubmit"
+               android:text="Submit"/>
+       </LinearLayout>
+   </ScrollView>
+
+</FrameLayout>
